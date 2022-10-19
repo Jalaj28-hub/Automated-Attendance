@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211078734907",
+    "firebase_url": "https://attendace-manager-a9589-default-rtdb.firebaseio.com",
+    "project_id": "attendace-manager-a9589",
+    "storage_bucket": "attendace-manager-a9589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211078734907:android:76cd30769bf8485a18e81e",
+        "android_client_info": {
+          "package_name": "com.example.biometriclogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211078734907-fv34lqsvvcbs24oossujl5vu3t287ug6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM86pqV0NTzt4RVESNCoJPx_D7EO8HcgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211078734907-fv34lqsvvcbs24oossujl5vu3t287ug6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

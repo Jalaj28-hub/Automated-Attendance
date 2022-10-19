@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/buttonbg.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/ic_baseline_how_to_reg_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_wave.xml" value="0.1125" />
+        <entry key="app/src/main/res/drawable/round_bg.xml" value="0.14" />
+        <entry key="app/src/main/res/drawable/round_border.xml" value="0.14" />
+        <entry key="app/src/main/res/drawable/roundbg.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/stuadminlogo_bg.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/text_color.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.1816123188405797" />
+        <entry key="app/src/main/res/layout/activity_admin_side.xml" value="0.1816123188405797" />
+        <entry key="app/src/main/res/layout/activity_choose.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_flash.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_flashactivity.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_generate_qractivity.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_generator_form.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_scan_qr.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_scan_qractivity.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_scan_qractivity2.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/admin_login.xml" value="0.1816123188405797" />
+        <entry key="app/src/main/res/layout/generatorform.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/stuadminpage.xml" value="0.14945652173913043" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
