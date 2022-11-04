@@ -16,6 +16,15 @@
         android:theme="@style/Theme.BiometricLogIn"
         tools:targetApi="31">
         <activity
+            android:name=".AttendaceList1"
+            android:exported="false" />
+        <activity
+            android:name=".Classes"
+            android:exported="false" />
+        <activity
+            android:name=".classes"
+            android:exported="false" />
+        <activity
             android:name=".ScanQRKotlin"
             android:exported="false" />
         <activity

@@ -21,7 +21,10 @@
         <entry key="app/src/main/res/drawable/text_color.xml" value="0.14" />
         <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.1816123188405797" />
         <entry key="app/src/main/res/layout/activity_admin_side.xml" value="0.1816123188405797" />
+        <entry key="app/src/main/res/layout/activity_attendace_list1.xml" value="0.1359375" />
+        <entry key="app/src/main/res/layout/activity_attendance_list.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_choose.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_classes.xml" value="0.1359375" />
         <entry key="app/src/main/res/layout/activity_flash.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_flashactivity.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_generate_qractivity.xml" value="0.19375" />

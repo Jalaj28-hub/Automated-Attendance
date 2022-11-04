@@ -19,6 +19,7 @@ import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 
 public class GenerateQRActivity extends AppCompatActivity {
@@ -27,7 +28,6 @@ public class GenerateQRActivity extends AppCompatActivity {
     private EditText dataEdt;
     private Button generateQrBtn;
     Bitmap bitmap;
-
     private Button update;
 
 
@@ -38,10 +38,9 @@ public class GenerateQRActivity extends AppCompatActivity {
         setContentView(R.layout.activity_generate_qractivity);
         getSupportActionBar().hide();
         qrCodeIV = findViewById(R.id.IVQrGenerator);
-
         generateQrBtn = findViewById(R.id.IdBtnGenerater);
-
         generateQrBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 generateQR();
@@ -79,13 +78,19 @@ public class GenerateQRActivity extends AppCompatActivity {
 
 
     private void generateQR() {
-        String text = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        String classcode=" ";
+            classcode = getIntent().getStringExtra("classcode").toLowerCase(Locale.ROOT);
+            //The key argument here must match that used in the other activity
+
+        String text = FirebaseAuth.getInstance().getCurrentUser().getUid()+"_"+classcode;
         MultiFormatWriter writer = new MultiFormatWriter();
         try {
             BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE, 400, 400);
             BarcodeEncoder encoder = new BarcodeEncoder();
             Bitmap bitmap = encoder.createBitmap(matrix);
             qrCodeIV.setImageBitmap(bitmap);
+            Toast.makeText(GenerateQRActivity.this,text,Toast.LENGTH_LONG).show();
         } catch (WriterException e) {
             e.printStackTrace();
         }

@@ -21,10 +21,10 @@ open class ScanQRKotlin : AppCompatActivity() {
 
     var res1 = ""
 
-    fun updateUserData() {
+    fun updateUserData(classcode:String) {
         val userHashMap = HashMap<String, Any>()
-        if (userHashMap["cspe12"] != 0L) {
-            userHashMap["cspe12"] = FieldValue.increment(1)
+        if (userHashMap[classcode] != 0L) {
+            userHashMap[classcode] = FieldValue.increment(1)
             // how to show that value?
         }
         updateUserAtt(this, userHashMap)
@@ -52,11 +52,14 @@ open class ScanQRKotlin : AppCompatActivity() {
         mCodeScanner.setDecodeCallback(DecodeCallback { result ->
             runOnUiThread {
                 tv.setText("Attendance marked")
-                res1 = result.text.toString()
+                val res2:String = result.text.toString()
+                val yourArray: List<String> = res2.split("_")
+                res1=yourArray[0]
+                val classcode:String=yourArray[1];
 //                Toast.makeText(this,"${fireclass.getdata()}",Toast.LENGTH_LONG).show()
 
                 intent.putExtra("t", res1)
-                updateUserData()
+                updateUserData(classcode)
 //                Toast.makeText(this@ScanQRKotlin, "$res1", Toast.LENGTH_LONG).show()
             }
         })
