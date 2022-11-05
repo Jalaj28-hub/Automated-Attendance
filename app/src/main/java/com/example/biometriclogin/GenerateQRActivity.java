@@ -47,14 +47,8 @@ public class GenerateQRActivity extends AppCompatActivity {
             }
         });
 
-        update = findViewById(R.id.update);
-        update.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(GenerateQRActivity.this, update.class));
-                Toast.makeText(GenerateQRActivity.this, "fwd", Toast.LENGTH_SHORT).show();
-            }
-        });
+
+
 
 //        update.setOnClickListener(new View.OnClickListener() {
 //            @Override

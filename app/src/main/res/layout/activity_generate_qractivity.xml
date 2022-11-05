@@ -26,12 +26,5 @@
         android:layout_gravity="center_horizontal"
         />
 
-    <Button
-        android:id="@+id/update"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Update attendance"
-        android:layout_gravity="center_horizontal"
-        />
 
 </LinearLayout>

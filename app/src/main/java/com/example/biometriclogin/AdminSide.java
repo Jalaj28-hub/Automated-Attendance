@@ -11,17 +11,27 @@ import com.google.zxing.client.android.Intents;
 
 public class AdminSide extends AppCompatActivity {
     private Button scanner;
+    private Button showAtt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_side);
         scanner=findViewById(R.id.IdBtnScanner);
+        showAtt=findViewById(R.id.showAtt);
         scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(AdminSide.this, ScanQRKotlin.class);
                 startActivity(intent);
                finish();
+            }
+        });
+        showAtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(AdminSide.this, AllAttendance.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
