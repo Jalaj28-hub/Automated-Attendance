@@ -28,11 +28,12 @@ class HomeActivity : AppCompatActivity() {
         Showatt?.setOnClickListener(View.OnClickListener {
             val `in` = Intent(this@HomeActivity, AttendaceList1::class.java)
             startActivity(`in`)
-
+            this.finish()
         })
         generateqr?.setOnClickListener(View.OnClickListener {
             val `in` = Intent(this@HomeActivity, Classes::class.java)
             startActivity(`in`)
+            this.finish()
         })
     }
 }

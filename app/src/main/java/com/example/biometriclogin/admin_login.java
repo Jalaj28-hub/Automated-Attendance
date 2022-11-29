@@ -16,6 +16,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class admin_login extends AppCompatActivity {
+    private FirebaseAuth auth;
     private TextInputEditText admin_email;
     private TextInputEditText admin_password;
     private Button admin_btn;
@@ -24,6 +25,17 @@ public class admin_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login);
+        auth=FirebaseAuth.getInstance();
+
+
+        if(auth.getCurrentUser() != null) {
+            if(auth.getCurrentUser().getEmail().toString()=="admin@gmail.com") {
+                startActivity(new Intent(this, AdminSide.class));
+                this.finish();
+            }
+        }
+
+
         getSupportActionBar().hide();
         admin_email=findViewById(R.id.tv_EmailLog);
         admin_password=findViewById(R.id.tv_PasswordLog);

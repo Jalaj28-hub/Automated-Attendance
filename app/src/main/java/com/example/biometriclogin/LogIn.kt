@@ -27,7 +27,7 @@ class LogIn : AppCompatActivity() {
         val currentuser= auth.currentUser
         if(currentuser != null) {
             startActivity(Intent(this@LogIn,HomeActivity::class.java))
-            finish()
+            this.finish()
         }
 
 
@@ -51,7 +51,7 @@ class LogIn : AppCompatActivity() {
                 if(it.isSuccessful){
                     val intent=Intent(this@LogIn,HomeActivity::class.java)
                     startActivity(intent)
-                    finish()
+                    this.finish()
 //                    Toast.makeText(this@LogIn,"Registration is succesfull.", Toast.LENGTH_LONG).show()
                 }
                 else{
@@ -65,7 +65,7 @@ class LogIn : AppCompatActivity() {
             tvRegisterLink.setTextColor(Color.parseColor("#0099FF"));
             val intent=Intent(this@LogIn,Registration::class.java)
             startActivity(intent)
-            finish()
+            this.finish()
         })
     }
 

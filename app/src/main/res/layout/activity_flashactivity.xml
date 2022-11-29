@@ -8,14 +8,13 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/IVLogo"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:src="@drawable/qrcode"
-        app:tint="@color/yellow"
-        android:id="@+id/IVLogo"
-        />
+        app:tint="@color/yellow" />
 
     <ProgressBar
         android:layout_width="wrap_content"

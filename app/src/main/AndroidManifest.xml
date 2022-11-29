@@ -4,7 +4,17 @@
     package="com.example.biometriclogin">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
+
+    android:requestLegacyExternalStorage="true"
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +25,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BiometricLogIn"
         tools:targetApi="31">
+        <activity
+            android:name=".Student_present"
+            android:exported="false" />
+        <activity
+            android:name=".Dynamic_classes"
+            android:exported="false" />
+        <activity
+            android:name=".DynamicClasses"
+            android:exported="false" />
         <activity
             android:name=".AllAttendance"
             android:exported="false" />
@@ -79,6 +98,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <receiver android:name="MyBrodcastReceiver" >
+        </receiver>
     </application>
 
 </manifest>

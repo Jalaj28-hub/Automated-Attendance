@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent">
-
-    <com.budiyev.android.codescanner.CodeScannerView
-        android:id="@+id/scanner_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_live"
+        android:id="@+id/cv_cspe12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -31,29 +29,31 @@
             android:id="@+id/subcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Live Attendance"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:text="CSPE12"
             android:textColor="@color/white"
             android:textSize="30sp"
 
             />
 
+        <TextView
+            android:id="@+id/subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Application Dev"
+            android:textColor="@color/white"
+            android:textSize="20sp"
 
+            />
 
 
     </androidx.cardview.widget.CardView>
 
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Text"
-        android:textColor="@color/yellow"
-        android:id="@+id/tvscan"
-        android:textSize="30sp"
-        android:gravity="center_horizontal"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="150dp"
-        />
-</FrameLayout>
+</LinearLayout>

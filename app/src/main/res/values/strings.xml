@@ -5,8 +5,8 @@
     <string name="location">CSPE22</string>
     <string name="stadium">CSPE32</string>
     <string name="league">Update</string>
-<!--    <string name="coach">Coach</string>-->
-<!--    <string name="star">Star</string>-->
+    <!--    <string name="coach">Coach</string>-->
+    <!--    <string name="star">Star</string>-->
 
     <string name="hint_search">Search by Club Name</string>
     <string name="action_search">Search</string>
